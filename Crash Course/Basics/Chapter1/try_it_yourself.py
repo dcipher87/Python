@@ -8,7 +8,7 @@
 """
 Possible future projects
 - Day trading algorithm
-- Web scrapping app
+- Web scrapping app (igroza)
 - Automation suite (megatron)
-- 
+- Investment management application
 """
