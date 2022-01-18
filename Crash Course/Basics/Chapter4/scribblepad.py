@@ -6,7 +6,7 @@
 
 # print("I just love pizza man!")
 
-# ### 4.1 Animals
+# ### 4.2 Animals
 # animals = ["amazon tree boa", "boa constrictor", "rainbow boa", "rubber boa", "yellow anaconda"]
 
 # for snake in animals:
@@ -53,8 +53,77 @@
 # cubes = [cube **3 for cube in range(1, 11)]
 # print(cubes)
 
- ### 4.10 Slices
-cars = ["vw", "bmw", "suzuki", "jeep", "lotus", "porsche", "ferrari"]
-print("The first three items on this list are: ")
-for car in cars[:3]:
-    print(car.title())
+#  ### 4.10 Slices
+# cars = ["vw", "bmw", "suzuki", "jeep", "lotus", "porsche", "ferrari"]
+# print("The first three items on this list are: ")
+# for car in cars[:3]:
+#     print(car.title())
+
+# cars = ["vw", "bmw", "suzuki", "jeep", "lotus", "porsche", "ferrari"]
+# print("The middle three items on this list are: ")
+# for car in cars[2:5]:
+#     print(car.title())
+
+# cars = ["vw", "bmw", "suzuki", "jeep", "lotus", "porsche", "ferrari"]
+# print("The last three items on this list are: ")
+# for car in cars[-3:]:
+#     print(car.title())
+
+# ### 4.11 My Pizzas, Your Pizzas
+
+# pizzas = ["something meaty", "chicken and mushroom", "bacon and fet", "hawaii", "triple decker" ]
+# friends_pizza = pizzas[:]
+# print(pizzas)
+# print(friends_pizza)
+
+# pizzas.append("club")
+# friends_pizza.append("mexican chilli")
+# print(pizzas)
+# print(friends_pizza)
+
+# print("\nMy favourite pizzas are:")
+# for pizza in pizzas:
+#     print(f"\t{pizza.title()}")
+
+# print("\nMy friends' favourite pizzas are:")
+# for pizza in friends_pizza:
+#     print(f"\t{pizza.title()}")
+
+# ### 4.12 More loops
+# my_foods = ["pizza", "falafel", "carrot cake"]
+# friends_food = my_foods[:]
+
+# friends_food.append("ice cream")
+# print(my_foods)
+# print(friends_food)
+
+# print("My foods are: ")
+# for food in my_foods:
+#     print(food.title())
+
+# print("My friends' foods are: ")
+# for food in friends_food:
+#     print(food.title())
+
+### 4.13 Buffet
+# dimensions = (200, 50)
+# print(dimensions)
+# dimensions[0] = 250
+
+# foods = ("pap and wors", "rice and curry", "beef stew", "bunny chow", "kota", "pie", "fish and chips")
+# # print("The restaurant serves the following foods: ")
+# # for food in foods:
+# #     print(food.title())
+
+# # foods[2] = "hot dogs"    
+
+# foods = ("pap and wors", "rice and curry", "beef stew", "bunny chow", "kota", "pie", "fish and chips")
+
+# print(foods)
+
+# foods = ("pap and wors", "rice and curry", "salad", "sandwich", "kota", "pie", "fish and chips")
+# print(foods)
+
+# print("The restaurant now serves these meals: ")
+# for food in foods:
+#     print(food.title())
