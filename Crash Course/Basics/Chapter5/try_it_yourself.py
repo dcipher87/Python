@@ -60,10 +60,10 @@
 
 
 # # numerical tests involving equality, inequality, greater than (and equal), less (and equal) or equal to
-teen = 17
-young_adult = 18 # can vote
-adult = 35
-senior_citizen = 56
+# teen = 17
+# young_adult = 18 # can vote
+# adult = 35
+# senior_citizen = 56
 
 # print("Can a teen vote?")
 # print(teen >= 18)
@@ -118,4 +118,102 @@ senior_citizen = 56
 # print("Is Gerald not my nickname?")
 # print("Gerald" not in my_nicknames)
 
+### 5.3 Alien Colors #1
 
+# alien_color = "green"
+# alien_color = "yellow"
+# alien_color = "red"
+
+# # if alien_color == "green":
+# #     print("You have just earned 5 points!")
+
+# if alien_color == "red":
+#     print("Game over!")
+
+### 5.4 Alien Colors #2
+
+# # alien_color = "green"
+# alien_color = "yellow"
+# # alien_color = "red"
+
+# if alien_color == "green":
+#     print("You have earned 5 points.")
+# else:
+#     print("You have earned 10 points.")
+
+# alien_color = "green"
+# if alien_color == "green":
+#     print("You have earned 5 points.")
+# else:
+#     print("You have earned 10 points.")
+
+# ### 5.5 Alien Colors #3
+
+# alien_color = "green"
+
+# if alien_color == "green":
+#     print("You have earned 5 points.")
+# elif alien_color == "yellow":
+#     print("You have earned 10 points")
+# else:
+#     print("You have earned 15 points.")
+
+# alien_color = "yellow"
+
+# if alien_color == "green":
+#     print("You have earned 5 points.")
+# elif alien_color == "yellow":
+#     print("You have earned 10 points")
+# else:
+#     print("You have earned 15 points.")
+
+# alien_color = "red"
+
+# if alien_color == "green":
+#     print("You have earned 5 points.")
+# elif alien_color == "yellow":
+#     print("You have earned 10 points")
+# else:
+#     print("You have earned 15 points.")
+
+# ### 5.6 Stages of Life
+
+# # age = 21
+# ages = [1, 2, 4, 13, 20, 65]
+
+# for age in ages:
+#     if age < 2:
+#         print("You are a baby.")
+#     elif age < 4:
+#         print("You are a toddler.")
+#     elif age < 13:
+#         print("You are a kid.")
+#     elif age < 20:
+#         print("You are a teenager.")
+#     elif age < 65:
+#         print("You are an adult.")
+#     else:
+#         print("You are an elder.")
+
+### 5.7 Favourite Fruit
+
+favourite_fruits = ["apple", "banana", "peach", "watermelon", "orange"]
+
+# apple, pear, pinapple, naartjie, kiwi, pawpaw
+
+# if "apple" in favourite_fruits:
+#     print("You really like apples!")
+# if "pear" in favourite_fruits:
+#     print("You really like pears!")
+# if "naartjie" in favourite_fruits:
+#     print("You really like naartjies!")
+# if "orange" in favourite_fruits:
+#     print("You really like oranges!")
+# if "kiwi" in favourite_fruits:
+#     print("You really like kiwis!")
+
+# fruits = ["apple", "pear", "watermelon", "banana", "pinapple", "naartjie", "kiwi", "pawpaw"]
+
+# for fruit in fruits:
+#     if fruit in favourite_fruits:
+#         print(f"You really like {fruit}s!")
