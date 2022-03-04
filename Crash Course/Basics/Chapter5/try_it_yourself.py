@@ -197,7 +197,7 @@
 
 ### 5.7 Favourite Fruit
 
-favourite_fruits = ["apple", "banana", "peach", "watermelon", "orange"]
+# favourite_fruits = ["apple", "banana", "peach", "watermelon", "orange"]
 
 # apple, pear, pinapple, naartjie, kiwi, pawpaw
 
@@ -217,3 +217,68 @@ favourite_fruits = ["apple", "banana", "peach", "watermelon", "orange"]
 # for fruit in fruits:
 #     if fruit in favourite_fruits:
 #         print(f"You really like {fruit}s!")
+
+### 5.8 Hello Admin
+
+# usernames = ["Khaya", "Dcipher", "Khigha", "admin", "Kisto", "Strife", "DefJux"]
+
+# for name in usernames:
+#     if name == "admin":
+#         print(f"Hello {name.title()}, would you like to see a status report?")
+#     else:
+#         print(f"Hello {name.title()}, thank you for logging in again!")
+
+# ### 5.9 No Users
+
+# # usernames = ["Khaya", "Dcipher", "Khigha", "admin", "Kisto", "Strife", "DefJux"]
+
+# usernames = []
+
+# if usernames:
+#     for name in usernames:
+#         if name == "admin":
+#             print(f"Hello {name.title()}, would you like to see a status report?")
+#         else:
+#             print(f"Hello {name.title()}, thank you for logging in again!")
+# else:
+#     print("We need to find some users!")
+
+# ### 5.10 Checking Usernames
+
+# users_current = ["Khaya", "Dcipher", "Khigha", "admin", "Kisto", "Strife", "DefJux"]
+
+# current_users = []
+
+# # append lowercase usernames into new list for duplicate check
+# for user in users_current:
+#     lower_user = user.lower()
+#     current_users.append(lower_user)
+
+# #print(current_users)
+
+# new_users = ["Cairo", "Berlin", "Khigha", "Nairobi", "London", "Rio", "Durban", "DefJux"]
+# # new_users = []
+
+# if new_users:
+#     for user in new_users:
+#         if user.lower() in current_users:
+#             print(f"{user.title()} is not available. Please enter a new username.")
+#         else:
+#             print(f"Username {user.title()} is avaialble.")
+# else:
+#     print("There are no new users.")
+
+# ### 5.11 Ordinal Numbers
+
+# numbers = list(range(1,10))
+# #print(numbers)
+
+# for number in numbers:
+#     if number == 1:
+#         print("1st")
+#     elif number == 2:
+#         print("2nd")
+#     elif number == 3:
+#         print("3rd")
+#     else:
+#         print(f"{number}th")
