@@ -46,3 +46,68 @@
 # print(f"{glossary['slice']}.")
 # print("\nTuple: ")
 # print(f"{glossary['tuple']}.")
+
+# ### 6.4 Glossary 2
+
+# # glossary = {
+# #     'variable': 'data values that can change',
+# #     'loop': 'sequence of instructions that is continually repeated',
+# #     'range': 'set of possible values a variable can hold',
+# #     'slice': 'a subset of data values in a dataset',
+# #     'tuple': 'an immutable(unchanging) data structure',
+# #     }
+
+# glossary = {
+#     'variable': 'data values that can change',
+#     'loop': 'sequence of instructions that is continually repeated',
+#     'range': 'set of possible values a variable can hold',
+#     'slice': 'a subset of data values in a dataset',
+#     'tuple': 'an immutable(unchanging) data structure',
+#     'comments': 'notes in code that are not executed but provide information about the code',
+#     'string': 'a series of characters (letters, numbers, punctuation, operators, etc',
+#     'Dcipher87': 'a computer programmer and pythonista'
+#     }
+
+# for term, definition in glossary.items():
+#     print(f"\n{term.title()}:")
+#     print(definition)
+# print("\n")
+
+### 6.5 Rivers
+
+# rivers = {
+#     'nile': 'egypt',
+#     'vaal': 'south africa',
+#     'amazon': 'brazil',
+#     'thames': 'england',
+#     }
+
+# for river, country in rivers.items():
+#     if river == "thames":
+#         print(f"The river {river.title()} runs through {country.title()}.")
+#     else:
+#         print(f"The {river.title()} river runs through {country.title()}.")
+# print("The rivers included in the survery are:")
+# for river in rivers.keys():
+#     print(f"\t{river.title()}")
+# print("\n")
+
+# print("We will be considering rivers from the following countries:")
+# for country in rivers.values():
+#     print(f"\t{country.title()}")
+
+# ### 6.6 Polling
+# favourite_languages = {
+#     'jen': 'python',
+#     'sarah': 'c',
+#     'edward': 'ruby',
+#     'phil': 'python',
+#     }
+
+# pollers = ['khaya', 'sarah', 'cairo', 'defjux', 'edward', 'lethu', 'enigma']
+
+# for poller in pollers:
+#     if poller in favourite_languages.keys():
+#         print(f"Hi {poller.title()}! Thank you for taking the poll.")
+#     else:
+#         print(f"Hi {poller.title()}, please don't forget to take the poll by Friday.")

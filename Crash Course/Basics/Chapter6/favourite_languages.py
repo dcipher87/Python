@@ -63,3 +63,45 @@
 # if 'erin' not in favourite_languages.keys():
 #     print("Erin, please take our poll!")
 
+# ### Looping through a dictionary's keys in a particular order
+# favourite_languages = {
+#     'jen': 'python',
+#     'sarah': 'c',
+#     'edward': 'ruby',
+#     'phil': 'python',
+#     }
+
+# # for name in sorted(favourite_languages.keys(), reverse=True):
+# #     print(f"{name.title()}, thank you for taking the poll.")
+# # # sorted() makes alphabetical a - z, reversed() makes original order in reverse, sorted(, reverse=True) makes z - a
+
+# for name, language in sorted(favourite_languages.items()):
+#     print(f"{name.title()}, thank you for taking my poll and confirming that {language.title()} is your favourite programming language.")
+
+# favourite_languages = {
+#     'jen': 'python',
+#     'sarah': 'c',
+#     'edward': 'ruby',
+#     'phil': 'python',
+#     }
+
+# print("The following languages have been mentioned in the poll:")
+# for language in favourite_languages.values():
+#     print(f"{language.title()}")
+# # values() method returns the values without the keys, this method will return each value including duplicates (python appears twice)
+
+# # to exclude duplicates use the set() method, a set is a collection of unique items
+# favourite_languages = {
+#     'jen': 'python',
+#     'sarah': 'c',
+#     'edward': 'ruby',
+#     'phil': 'python',
+#     }
+
+# print("The following languages have been mentioned in the poll:")
+# for language in set(favourite_languages.values()):
+#     print(f"{language.title()}")
+
+# a set is a list with curly braces but no key-value pairs
+languages = {'python', 'ruby', 'python', 'c'}
+print(languages)
