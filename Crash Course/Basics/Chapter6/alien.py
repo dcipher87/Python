@@ -63,3 +63,97 @@
 # del alien_0['points']
 # print(alien_0)
 
+### Nesting
+
+# List of dictionaries
+
+alien_0 = {'color': 'green', 'points': 5}
+alien_1 = {'color': 'yellow', 'points': 10}
+alien_2 = {'color': 'red', 'points': 15}
+
+aliens = [alien_0, alien_1, alien_2]
+
+# for alien in aliens:
+#     print(alien)
+
+# print(aliens[0]['color'])
+
+# print("The colors we have chosen for the aliens are:")
+# for alien in aliens:
+#   print(alien['color'].title())
+
+# print("The aliens will have the following points values:")
+# for alien in aliens:
+#     print(alien['points'])
+
+# print("The aliens in our games will have the following characteristics:")
+# for alien in aliens:
+#     print(f"The {alien['color'].title()} alien will be worth {alien['points']} points.")
+
+# Make 30 aliens
+
+# aliens = []
+
+# for alien_number in range(30):
+#     new_alien = {'color': 'green', 'points': 5, 'speed': 'slow'}
+#     aliens.append(new_alien)
+
+# # print(aliens)    
+
+# # Show the first 5 aliens
+# for alien in aliens[:5]:
+#     print(alien)
+
+# # Show number of aliens created
+# print(f"Total number of aliens: {len(aliens)}.")
+
+# aliens = []
+
+# for number in range(30):
+#     new_alien = {'color': 'green', 'points': 5, 'speed': 'slow'}
+#     aliens.append(new_alien)
+
+# # print(len(aliens))
+# # print(aliens[:5])
+
+# for alien in aliens[:5]:
+#     if alien['color'] == 'green':
+#         alien['color'] = 'yellow'
+#         alien['points'] = 10
+#         alien['speed'] = 'medium'
+
+# print(len(aliens))
+
+# for alien in aliens[:10]:
+#     print(alien)
+
+# aliens = []
+
+# for number in range(30):
+#     new_alien = {'color': 'green', 'points': 5, 'speed': 'slow'}
+#     aliens.append(new_alien)
+
+# # print(len(aliens))
+# # print(aliens[:5])
+
+# for alien in aliens[:5]:
+#     if alien['color'] == 'green':
+#         alien['color'] = 'yellow'
+#         alien['points'] = 10
+#         alien['speed'] = 'medium'
+
+# for alien in aliens[:10]:
+#     if alien['color'] == 'green':
+#         alien['color'] = 'yellow'
+#         alien['points'] = 10
+#         alien['speed'] = 'medium'
+#     elif alien['color'] == 'yellow':
+#         alien['color'] = 'red'
+#         alien['points'] = 15
+#         alien['speed'] = 'fast'
+
+
+# print(len(aliens))
+
+# for alien in aliens[:15]:
+#     print(alien)

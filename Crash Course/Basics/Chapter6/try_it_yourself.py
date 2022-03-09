@@ -111,3 +111,168 @@
 #         print(f"Hi {poller.title()}! Thank you for taking the poll.")
 #     else:
 #         print(f"Hi {poller.title()}, please don't forget to take the poll by Friday.")
+
+# ### 6.7 People
+
+# # from 6.1 
+# kubisi = {
+#     'first_name': 'khaya',
+#     'last_name': 'ubisi', 
+#     'age': 34,
+#     'city': 'johannesburg',
+#     }
+# klethu = {
+#     'first_name': 'khigha',
+#     'last_name': 'lethu',
+#     'age': 30,
+#     'city': 'boksburg',
+#     }
+# cdilbert = {
+#     'first_name': 'cairo',
+#     'last_name': 'dilbert',
+#     'age': 25,
+#     'city': 'springs',
+#     }
+# dcipher = {
+#     'first_name': 'defjux',
+#     'last_name': 'cipher',
+#     'age': 30,
+#     'city': 'midrand',
+#     }
+# # Tile with full name, age and city
+# # Sentence with full name, age and city
+
+# people = [kubisi, klethu, cdilbert, dcipher]
+# # print("\nWe have the following active users: ")
+# # for person in people:
+# #     full_name = f"{person['first_name'].title()} {person['last_name'].title()}"
+# #     age = person['age']
+# #     city = person['city'].title()
+# #     print(f"\n\tFull name: {full_name}")
+# #     print(f"\tAge: {age}")
+# #     print(f"\tCity: {city}")    
+
+# print("We have the following users: ")
+# for person in people:
+#     full_name = f"{person['first_name'].title()} {person['last_name'].title()}"
+#     age = person['age']
+#     city = f"{person['city'].title()}"
+#     print(f"{full_name} is a {age} year old from {city}.")
+
+# ### 6.8 Pets
+
+# earthwormjim = {
+#     'name': 'earth worm jim',
+#     'species': 'house snake',
+#     'order': 'first',
+#     'morph': 'normal',
+#     }
+# adamantium = {
+#     'name': 'adamantium',
+#     'species': 'red-tail boa',
+#     'order': 'second',
+#     'morph': 'albino',
+#     }
+# eve = {
+#     'name': 'eve',
+#     'species': 'dumerils boa',
+#     'order': 'third',
+#     'morph': 'normal',
+#     }
+# lilith = {
+#     'name': 'lilith',
+#     'species': 'amazon tree boa',
+#     'order': 'fourth',
+#     'morph': 'normal',
+#     }
+# apple = {
+#     'name': 'apple',
+#     'species': 'rosy boa',
+#     'order': 'fifth',
+#     'morph': 'normal',
+#     }
+# my_pets = [earthwormjim, adamantium, eve, lilith, apple]
+
+# print("These are all my snakes: \n")
+# for pet in my_pets:
+#     # variables 
+#     name = pet['name'].title()
+#     species = pet['species'].title()
+#     order = pet['order']
+#     morph = pet['morph']
+
+#     # print(f"{name} was my {order} snake, she's a {morph} {species}." )
+#     print(f"Name: {name}")
+#     print(f"Species: {species}")
+#     print(f"Morph: {morph}\n")
+
+# ### 6.9 Favourite Places
+
+# favourite_places = {
+#     'khaya': {
+#         'city': 'amsterdam',
+#         'country': 'portugal',
+#         'town': 'springs',
+#         },
+#     'khigha': {
+#         'city': 'new york',
+#         'country': 'kenya',
+#         'town': 'boksburg',
+#         },
+#     'cairo': {
+#         'city': 'london',
+#         'country': 'egypt',
+#         'town': 'brooklyn',
+#         },
+#     }
+# for name, places in favourite_places.items():
+#     print(f"{name.title()}'s favourite places are: ")
+#     for location, place in places.items():
+#         print(f"Favourite {location.title()} is {place.title()}.")
+#     print("\n")
+        
+# ### 6.10 Favourite Numbers
+
+# favourite_numbers = {
+#     'khaya': [13, 23, 64],
+#     'khigha': [7, 95, 136, 4363],
+#     'defjux': [34, 4, 22, 6, 356, 43],
+#     'strife': [144, 23, 65, 44],
+#     'enigma': [9, 45, 5],
+#     }
+
+# for name, numbers in favourite_numbers.items():
+#     print(f"\n{name.title()}'s favourite numbers are: ")
+#     for number in numbers:
+#         print(number)
+
+# ### 6.11 Cities 
+# #sandton, lisbon, manchester, new york, tokyo, sydney
+# cities = {
+#     'sandton': {
+#         'country': 'south africa',
+#         'population': 222415,
+#         'fact': 'Sandton is home to Sandton Convention Centre, one of the largest convention centres on the continent.',
+#         },
+#     'lisbon': {
+#         'country': 'portugal',
+#         'population': 504718,
+#         'fact': 'Lisbon is one of Europe\'s oldest cities and oldest capitals, inhabited since around 205BC.',
+#         },
+#     'manchester': {
+#         'country': 'united kingdom',
+#         'population': 553230,
+#         'fact': 'Manchester is where the atom was split for the first time',
+#         },
+# }
+# for city, info in cities.items():
+#     print(city.title())
+#     for topic, details in info.items():
+#         if topic == 'country':
+#             print(f"{topic.title()}: {details.title()}")
+#         else:   
+#             print(f"{topic.title()}: {details}")
+#     print("\n")        
+
+### 6.12 Extensions
+

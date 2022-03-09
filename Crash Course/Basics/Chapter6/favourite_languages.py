@@ -102,6 +102,21 @@
 # for language in set(favourite_languages.values()):
 #     print(f"{language.title()}")
 
-# a set is a list with curly braces but no key-value pairs
-languages = {'python', 'ruby', 'python', 'c'}
-print(languages)
+# # a set is a list with curly braces but no key-value pairs
+# languages = {'python', 'ruby', 'python', 'c'}
+# print(languages)
+
+# favourite_languages = {
+#     'jen': ['python', 'ruby'],
+#     'sarah': ['c'],
+#     'edward': ['ruby', 'go'],
+#     'phil': ['python', 'haskell'],
+#     }
+
+# for name, languages in favourite_languages.items():
+#     if len(languages) == 1:
+#         print(f"\n{name.title()}'s favourite language is: ")
+#     else:
+#         print(f"\n{name.title()}'s favourite languages are: ")
+#     for language in languages:
+#         print(f"\t{language.title()}")    
