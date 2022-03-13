@@ -162,3 +162,114 @@
 # print(messages)
 # print(sent_messages)
 
+# ### 8.12 Sandwiches
+# def make_sandwich(*fillings):
+#     """Summarise the fillings requested for a sandwich"""
+#     print("\nYour sandwich will contain the following: ")
+#     for fill in fillings:
+#         print(f"- {fill.title()}")
+
+# make_sandwich("peanut butter and jam")
+# make_sandwich("tuna", "mayo")
+# make_sandwich("bacon", "lettuce", "tomato")
+
+# ### 8.13 User Profile
+
+# def build_profile(first_name, last_name, **user_info):
+#     """Display all info we have for a user"""
+#     user_info['first_name'] = first_name
+#     user_info['last_name'] = last_name
+#     return user_info
+
+# user_profile = build_profile("khaya", "ubisi", location="johannesburg", occupation="software developer", hobby="unicycling", food="pizza")
+
+# print(user_profile)
+
+# print("\nUser info:" )
+# for key, value in user_profile.items():
+#     print(f"{key.title()}: {value.title()}")
+
+# ### 8.14 Cars
+# def make_car(make, model, **extras):
+#     """Prints the details of requested car"""
+#     extras['make'] = make
+#     extras['model'] = model
+#     return extras
+
+# def display_car(extras):
+#     """Print confirmation of requested car details"""
+#     print("\nYou have requested the following car: ")
+#     for key, value in extras.items():
+#         print(f"\t- {key.title()}: {value.title()}")
+
+
+# requested_car = make_car("honda", "civic", color="white", towbar="True", sunroof="True")
+
+# display_car(requested_car)
+
+# requested_car = make_car("subaru", "outback", color="blue", sportspackage="True")
+
+# display_car(requested_car)
+
+# ### 8.15 Printing Models
+
+# from printing_functions import print_models as pm, confirm_printed as cp 
+
+# to_print = ["bluetooth speaker", "headphones", "rubber duck", "photo frame", "vase"]
+# printed = []
+
+# pm(to_print, printed)
+# cp(printed)
+
+### 8.16 Imports
+# import build_profile
+
+# my_profile =  build_profile.build_profile("khaya", "ubisi", age=34, occupation="junior software engineer", location="johannesbug")
+
+# #print(my_profile)
+
+# print("User details: ")
+# for key, value in my_profile.items():
+#     if key == 'age':
+#         print(f"\t-{key.title()}: {value}")
+#     else:
+#         print(f"\t-{key.title()}: {value.title()}")
+
+# from build_profile import build_profile as bp
+
+# my_profile =  bp("khaya", "ubisi", age=34, occupation="junior software engineer", location="johannesbug")
+
+# #print(my_profile)
+
+# print("User details: ")
+# for key, value in my_profile.items():
+#     if key == 'age':
+#         print(f"\t-{key.title()}: {value}")
+#     else:
+#         print(f"\t-{key.title()}: {value.title()}")
+
+# import build_profile as bp
+
+# my_profile =  bp.build_profile("khaya", "ubisi", age=34, occupation="junior software engineer", location="johannesbug")
+
+# #print(my_profile)
+
+# print("User details: ")
+# for key, value in my_profile.items():
+#     if key == 'age':
+#         print(f"\t-{key.title()}: {value}")
+#     else:
+#         print(f"\t-{key.title()}: {value.title()}")
+
+from build_profile import *
+
+my_profile =  build_profile("khaya", "ubisi", age=34, occupation="junior software engineer", location="johannesbug")
+
+#print(my_profile)
+
+print("User details: ")
+for key, value in my_profile.items():
+    if key == 'age':
+        print(f"\t-{key.title()}: {value}")
+    else:
+        print(f"\t-{key.title()}: {value.title()}")

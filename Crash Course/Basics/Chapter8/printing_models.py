@@ -21,13 +21,14 @@ completed_models = []
 
 #simulate printing each design and move each from unprinted to completed
 def print_models(unprinted, completed):
+    """Simulate printing each design then move to completed list"""
     while unprinted:
         current_design = unprinted.pop()
         print(f"Printing model: {current_design}")
         completed_models.append(current_design)
 
 def confirm_printed(completed): 
-#display all completed models
+    """Displays all completed models"""
     print("\nThe following models have been printed: ")
     for model in completed_models:
         print(model)
