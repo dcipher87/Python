@@ -1,80 +1,63 @@
-# class Car:
-#     """A simple attempt to represent a car."""
-
-#     def __init__(self, make, model, year):
-#         """Initialises atrributes to describe car."""
-#         self.make = make.title()
-#         self.model = model.title()
-#         self.year = year
-
-#     def get_descriptive_name(self):
-#         """Return neatly formatted descriptive name."""
-#         long_name = f"{self.year} {self.make} {self.model}"
-#         return long_name
-
-# my_new_car = Car("audi", "a3", 2018)
-# print(my_new_car.get_descriptive_name())
+"""A class that can be used to represent a car."""
 
 class Car:
-    """A simple representation of a car."""
-
+    """A simple attempt to represent a car."""
     def __init__(self, make, model, year):
+        """Initialise attributes to describe a car."""
         self.make = make.title()
         self.model = model.title()
         self.year = year
-        self.odometer_reading = 10000
+        self.odometer_reading = 0
 
-    def get_description(self):
-        "Return a neatly formatted descriptive name."
+    def get_descriptive_name(self):
+        """Return a neatly formatted descriptive name of car."""
         long_name = f"{self.year} {self.make} {self.model}"
         return long_name
-
+    
     def read_odometer(self):
-        """Prints the car's mileage."""
-        print(f"The car has {self.odometer_reading} miles on it.")
+        """Prints a statement showing car's current mileage."""
+        print(f"The car currently has {self.odometer_reading} miles on it.")
 
     def update_odometer(self, mileage):
-        """
-        Set the odometer reading to value provided.
-        Reject the change if it attempts to roll odometer back.
-        """
+        """Updates odometer reading to value provided if above current mileage"""
         if mileage > self.odometer_reading:
             self.odometer_reading = mileage
         else:
-            print("You can't roll back an odometer.")
+            print("Odometer can't be rolled back.")
 
     def increment_odometer(self, miles):
-        """Add a given amount to odometer reading."""
-        if miles > 0:
-            self.odometer_reading = self.odometer_reading + miles
-        else:
-            print("Miles can only be a positive integer.")
-        #self.odometer_reading += miles
+        """Increase odometer reading by value provided."""
+        self.odometer_reading += miles
 
-# my_car = Car("Volkswagen", "Polo GT", 2012)
+# class Battery:
+#     """A simple representation of an electric car battery."""
 
-# print(my_car.get_description())
-#my_car.read_odometer()
+#     def __init__(self, battery_size=75):
+#         """Initialise battery's attributes."""
+#         self.battery_size = battery_size
 
-### Modifying attribute values
+#     def describe_battery(self):
+#         """Prints a statement describing the battery size."""
+#         print(f"This car has a {self.battery_size}_kWh battery.")
 
-## Modifying an attributes value directly
-# my_car.odometer_reading = 75
+#     def get_range(self):
+#         """Prints a statement about the range this battery provides."""
+#         if self.battery_size == 75:
+#             range = 260
+#         elif self.battery_size == 100:
+#             range = 315
 
-# my_car.read_odometer()
+#         print(f"This car can about {range} miles on a full charge.")
 
-## Modifying an attribute value through a method
+# class ElectricCar(Car):
+#     """Models aspects of a car, specific to electric vehicles."""
 
-# my_car.read_odometer()
-# my_car.update_odometer(500)
-# my_car.read_odometer()
+#     def __init__(self, make, model, year):
+#         """
+#         Initialises attributes of parent (Car).
+#         Then initialises attributes specific to an electric car.
+#         """
+#         super().__init__(make, model, year)
+#         self.battery = Battery()
 
-## Incrementing an attribute's value through a method
-my_used_car = Car("subaru", "outback", 2015)
-print(my_used_car.get_description())
-
-my_used_car.update_odometer(24500)
-my_used_car.read_odometer()
-
-my_used_car.increment_odometer(500)
-my_used_car.read_odometer()
+        

@@ -357,3 +357,183 @@
 # my_admin_user = Admin("khiga", "lethu", "springs", "software developer", "024567643", "khi@gha.com", "food", "dancehall", "darts", "pap")
 
 # my_admin_user.privileges.show_privileges()
+
+# ### 9.9 Battery Upgrade
+# class Car:
+#     """A simple representation of a car."""
+#     def __init__(self, make, model, year):
+#         """Initialises car attributes."""
+#         self.make = make.title()
+#         self.model = model.title()
+#         self.year = year
+#         self.odometer_reading = 0
+#         self.gas_tank_size = 60
+    
+#     def get_description(self):
+#         """Prints neatly formatted car description."""
+#         long_name = f"{self.year} {self.make} {self.model}"
+#         return long_name
+
+#     def read_odometer(self):
+#         "Prints the car's current mileage."
+#         print(f"This car has {self.odometer_reading} miles on it.")
+
+#     def update_odometer(self, mileage):
+#         """Sets the car's odometer reading to the value provided."""
+#         if mileage >= self.odometer_reading:
+#             self.odometer_reading = mileage
+#         else:
+#             print("Odometer cannot be rolled back!")
+
+#     def increment_odometer(self, miles):
+#         "Increases odometer reading by value provided."
+#         self.odometer_reading += miles
+
+#     def fill_gas_tank(self):
+#         self.gas_price = 18
+#         """Prints the cost to fill the gas tank."""
+#         print(f"It will cost {self.gas_tank_size * self.gas_price} to fill this tank.")
+
+# class Battery:
+#     """A simple attempt to model a battery for an electric car."""
+#     def __init__(self, battery_size=75):
+#         """Initialises a battery's attributes."""
+#         self.battery_size = battery_size
+
+#     def describe_battery(self):
+#         """Prints a description of the battery size."""
+#         print(f"This car has a {self.battery_size}-kWh battery.")
+
+#     def get_range(self):
+#         """Prints a statement about the range provided by the battery."""
+#         if self.battery_size == 75:
+#             range = 260
+#         elif self.battery_size == 100:
+#             range = 315
+#         print(f"This car can got about {range} miles on a full charge.")
+
+#     def upgrade_battery(self):
+#         """Increase the battery if battery below 100 kWh."""
+#         if self.battery_size < 100:
+#             self.battery_size = 100
+
+
+# class ElectricCar(Car):
+#     """Represents aspects of a car specific to an electric car."""
+
+#     def __init__ (self, make, model, year):
+#         """Initiates attributes about the parent class."""
+#         super().__init__(make, model, year)
+#         self.battery = Battery()
+
+#     def fill_gas_tank(self):
+#         """Electric cars do not have gas tanks."""
+#         print("This car doesn't have a gas tank to be filled.")
+
+# my_electric_car = ElectricCar("smart", "cabriolet", 2012)
+# print(my_electric_car.get_description())
+# my_electric_car.battery.get_range()
+
+# my_electric_car.battery.upgrade_battery()
+# my_electric_car.battery.get_range()
+
+# ### 9.10 Imported Restaurant
+
+# from restaurant import Restaurant
+
+# my_cafe = Restaurant("Khaya's Kota", "traditional township")
+# my_cafe.describe_restaurant()
+# my_cafe.set_number_served(25)
+# print(my_cafe.number_served)
+
+# ### 9.11 Imported Admin
+# from admin import Admin
+
+# my_admin_user = Admin("khaya", "lethu", "boksburg", "software developer", "0254569025", "my@email.com", "chess", "rock", "football", "spaghetti")
+
+# my_admin_user.privileges.show_privileges()
+
+# ### 9.12 Multiple Modules
+# from privileges_and_admin import Admin
+
+# my_multi_module_user = Admin("James", "GiantPeach", "Peachville", "farmer", "5552492", "peaches@giant.com", "eating fruit", "peach rock", "darts", "peaches and cream")
+
+# my_multi_module_user.privileges.show_privileges()
+
+# ### 9.13 Dice
+# from random import randint
+
+# class Dice:
+#     """A representation of a dice."""
+#     def __init__(self, value=6):
+#         """Initialises attributes of a dice."""
+#         self.sides = value
+
+#     def roll_dice(self):
+#         """Simulates the rolling of a dice."""
+#         self.side_of_dice = randint(1, self.sides)
+#         print(f"The dice is showing {self.side_of_dice}.")
+
+# # my_dice = Dice()
+# # my_dice.roll_dice()
+
+# # my_dice = Dice(10)
+# # my_dice.roll_dice()
+
+# my_dice = Dice(20)
+# my_dice.roll_dice()
+
+### 9.14 Lottery
+
+from random import randint, choice
+
+lotto_numbers = []
+alphabet = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
+def play_lotto():
+    for i in range(1, 11):
+        current_int = randint(1, 49)
+        lotto_numbers.append(current_int)
+
+    for i in range(1,6):
+        letter_position = randint(1,25)
+        current_letter = alphabet[letter_position]
+        lotto_numbers.append(current_letter)
+
+# print("The winnin lotto characters are: ")
+# for i in range(1, 5):
+#     winning_char = choice(lotto_numbers)
+#     print(f"\t{winning_char}")
+
+### 9.15 Lottery analysis
+
+from random import choice
+
+my_ticket = []
+winning_numbers = []
+
+def generate_numbers(empty_list):
+    numbers = list(range(1, 10))
+    alphabets = ['A', 'B', 'C', 'D', 'E']
+    for i in range(1, 5):
+        current_number = choice(numbers)
+        empty_list.append(current_number)
+        numbers.remove(current_number)
+    # sorted(empty_list)
+    empty_list.sort()
+    empty_list.append(choice(alphabets))
+        
+    print(empty_list)
+    return empty_list
+
+ticket = generate_numbers(my_ticket)
+print("\n")
+draw = generate_numbers(winning_numbers)
+
+count = 1
+
+while ticket != draw:
+    count += 1
+    draw = []
+    draw = generate_numbers(draw)
+print(f"Winner after {count} draws.")    
+
