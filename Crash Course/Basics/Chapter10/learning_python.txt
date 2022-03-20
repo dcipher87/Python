@@ -1,0 +1,5 @@
+In Python you can create variables, functions and classes.
+In Python you can loop over items in a list, tuple or dictionary.
+In Python you can alter attributes using class methods.
+In Python you can read files to access and use the data they contain.
+In Python you can automate the boring stuff.

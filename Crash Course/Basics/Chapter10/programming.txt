@@ -1,0 +1,5 @@
+Some reasons people love programming: 
+	 - Python is a snake
+	 - Loopy loops
+	 - Variety of variables
+	 - Dictating dictionaries
